@@ -263,8 +263,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .enroll { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; }
 .price { background: var(--ink); color: #fff; border-radius: var(--r-xl); padding: clamp(40px, 5vw, 56px) clamp(24px, 4vw, 56px); display: grid; gap: 14px; justify-items: center; align-content: center; }
 .price h3 { font-size: 22px; letter-spacing: -.02em; max-width: 420px; }
-.price__amount { font: 600 clamp(48px, 6vw, 68px)/1.05 var(--f-head); letter-spacing: -.05em; }
-.price__sub { color: rgba(255,255,255,.72); }
+.price__amount { font: 600 clamp(34px, 3.8vw, 48px)/1.1 var(--f-head); letter-spacing: -.045em; text-wrap: balance; }
+.price__sub { color: rgba(255,255,255,.72); max-width: 420px; }
 .price ul { width: 100%; border-top: 1px solid rgba(255,255,255,.14); margin-top: 8px; padding: 24px 0 12px; display: grid; gap: 12px; justify-items: center; }
 .price li { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; }
 .price li::before { content: ""; width: 18px; height: 18px; flex: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%238FB3FF' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
