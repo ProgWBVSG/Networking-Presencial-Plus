@@ -122,7 +122,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .ticker { overflow: hidden; padding: 22px 0; background: var(--cream); }
 .ticker__track { display: flex; align-items: center; gap: 28px; width: max-content; animation: ticker 38s linear infinite; }
 .ticker span { font: 600 clamp(26px, 3.2vw, 40px)/1.1 var(--f-head); letter-spacing: -.04em; white-space: nowrap; }
-.ticker b { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font: 700 26px/1 var(--f-head); flex: none; }
+.ticker b { width: 40px; height: 40px; border-radius: 50%; background: var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5v14M5 12h14' fill='none' stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center / 22px no-repeat; font-size: 0; color: transparent; flex: none; }
 @keyframes ticker { to { transform: translateX(-50%); } }
 
 /* ---------- Problem ---------- */
@@ -148,7 +148,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .cert__paper strong { font: 600 clamp(20px, 2.2vw, 26px)/1.15 var(--f-head); letter-spacing: -.035em; max-width: 300px; }
 .cert__line { width: 200px; height: 1.5px; background: var(--line); margin: 6px 0; }
 .cert__name { font-weight: 500; color: var(--ink) !important; }
-.cert__seal { position: absolute; right: 22px; bottom: 22px; width: 76px; height: 76px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font: 700 44px/1 var(--f-head); }
+.cert__seal { position: absolute; right: 22px; bottom: 22px; width: 76px; height: 76px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; }
+.cert__seal svg { width: 40px; height: 40px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; }
 .cert__outcomes { display: grid; gap: 30px; justify-items: center; }
 .cert__outcomes > h3 { font-size: clamp(26px, 2.6vw, 32px); }
 .outcome { display: grid; gap: 8px; justify-items: center; max-width: 440px; }
