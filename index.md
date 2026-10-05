@@ -66,6 +66,14 @@ La academia vive en Skool, la plataforma que usan miles de comunidades en el mun
 
 En ocho meses armamos una red de coaches que se encuentra, se recomienda y trabaja junta: casi 40 coaches en la red, 10 networking presenciales y 8 meses de comunidad.
 
+## Un ecosistema que conecta todo el país
+
+Nacimos en Buenos Aires y crecemos con cada coach que se suma. La academia es 100% virtual, así que te formás desde cualquier provincia, y con las mesas de desarrollo la red llega a cada ciudad.
+
+- **Buenos Aires:** donde nacieron los encuentros presenciales.
+- **Córdoba:** la próxima mesa de desarrollo.
+- **Todo el país:** la academia se cursa online desde cualquier provincia.
+
 ## ¿Es para vos?
 
 Es para vos si querés trabajar como coach dentro de organizaciones, liderás equipos y querés herramientas de coaching, te importa practicar de verdad, querés colegas que sigan ahí después de recibirte o necesitás cursar online sin perder el contacto humano.
