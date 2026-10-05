@@ -12,7 +12,7 @@ Abrir http://localhost:5173
 
 ## Antes de publicar
 
-1. **WhatsApp:** completar el número de la coordinación en `assets/js/main.js` (`NP_CONFIG.whatsapp`, con código de país y sin `+`, por ejemplo `5491112345678`).
+1. **WhatsApp:** cargado en `assets/js/main.js` (`NP_CONFIG.whatsapp = 5493484359294`, es el +54 9 3484 35-9294 de la coordinación). Para cambiarlo, usar código de país y sin `+` ni espacios.
 2. **Textos entre corchetes:** precio, cuotas, duración, horario, requisitos, nombres de la dirección, trayectoria y testimonio.
 3. **Temario:** las 4 etapas son una propuesta. Validar con la dirección.
 4. **Fotos:** las de `assets/img` son provisorias de Unsplash. Reemplazar por fotos reales de los networking y la dirección con el mismo nombre de archivo (versión de 1600 y de 800 px de ancho, en WebP).

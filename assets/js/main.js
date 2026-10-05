@@ -2,7 +2,7 @@
 
 // Datos a completar por NP+. El número va con código de país, sin + ni espacios (ej: 5491112345678).
 const NP_CONFIG = {
-  whatsapp: '',
+  whatsapp: '5493484359294',
 };
 
 document.documentElement.classList.add('js');
