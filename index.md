@@ -1,6 +1,6 @@
 # Formate como coach con una comunidad que te sostiene
 
-Certificación en Liderazgo Ontológico Organizacional de NP+. 100% virtual, con mentorías, networking y práctica en empresas desde el primer día. Arrancamos el 15 de marzo. Casi 40 coaches ya son parte de la red.
+Certificación en Liderazgo Ontológico Organizacional de NP+, 100% virtual. Desde el primer día de cursada ya sos parte de la red: networking, mentorías con coaches formados y pasantías en empresas. Arrancamos el 15 de marzo. Casi 40 coaches ya son parte de la red.
 
 ## Muchas formaciones terminan el día que te entregan el certificado
 
@@ -11,7 +11,7 @@ Y ahí empiezan las preguntas que nadie te responde:
 - El grupo de la cursada se apagó a las dos semanas de terminar.
 - Querés trabajar en organizaciones y no conocés a nadie adentro.
 
-En NP+ la formación y el acompañamiento empiezan el mismo día.
+En NP+ el sostén no espera al título. Arranca el primer día de cursada.
 
 ## Liderazgo Ontológico Organizacional
 
@@ -23,15 +23,19 @@ Al terminar vas a poder:
 - **Destrabar conversaciones difíciles:** ver qué hay detrás de un conflicto y diseñar la conversación que lo mueve.
 - **Salir a trabajar con red:** práctica en empresas, contactos y una comunidad que te sigue acompañando.
 
-## Tu inscripción incluye mucho más que clases
+## Formar, practicar, conectar y crecer, en un mismo lugar
 
-Desde la primera semana sos parte de todo el ecosistema de NP+.
+Tu inscripción a la academia te abre todo el camino del coach. Cada etapa, acompañada por la red de NP+.
 
-- **Clases en vivo y todo en la app:** encuentros por Zoom y cápsulas grabadas en Skool.
-- **Mentorías desde la primera semana:** grupos chicos con coaches en actividad.
-- **Networking junior:** tu espacio con otros estudiantes para preguntar, practicar y armar vínculos.
-- **Networking con profesionales:** encuentros presenciales con casi 40 coaches de distintas áreas.
-- **Práctica en empresas:** entrás como observador en consultoras y empresas asociadas mientras cursás.
+- **Te formás en la academia:** certificación 100% virtual en Skool, con clases en vivo, cápsulas y mentorías con coaches formados.
+- **Conectás desde el día uno:** Networking Junior, tu espacio entre estudiantes, donde las dudas se hablan libres y se aprende juntos.
+- **Practicás dentro de una empresa:** pasantías como observador en empresas asociadas mientras cursás. El punto más alto del recorrido: ejercer como coach adentro de una organización.
+- **Aprendés de coaches en actividad:** networking presencial con casi 40 coaches de distintas profesiones. Ya van 10 encuentros en Buenos Aires.
+- **Crecés y armás tu propia mesa:** con las mesas de desarrollo llevás el modelo a tu ciudad, con el sello de NP+.
+
+## Misión y visión
+
+Misión: elevar el estándar del coaching y el liderazgo, formando y sosteniendo a personas y organizaciones a través de un mismo ecosistema. Visión: ser el ecosistema regional que vincula cada etapa del camino del coach y del líder.
 
 ## Cuatro etapas para formarte como coach
 
@@ -78,7 +82,9 @@ Inscripciones abiertas. La inversión y las formas de pago se informan por mensa
 
 **¿La academia es 100% online?** Sí. Las clases son en vivo por Zoom y el material queda en la app de Skool. Los networking profesionales son presenciales en Buenos Aires.
 
-**Estudio en otra escuela. ¿Puedo sumarme a la comunidad?** Sí. Podés sumarte al networking junior con una membresía, aunque no curses en NP+.
+**¿Qué pasa cuando termino la certificación?** Seguís en la red. Pasás al networking presencial con coaches en actividad y podés armar tu propia mesa de desarrollo en tu ciudad, con el sello de NP+.
+
+**Estudio en otra escuela. ¿Puedo sumarme a la comunidad?** Sí. El Networking Junior está abierto a estudiantes de cualquier academia de coaching: con una membresía tenés networking, mentorías con coaches formados y pasantías como observador en empresas.
 
 ## NP+ · Formar + Sostener
 

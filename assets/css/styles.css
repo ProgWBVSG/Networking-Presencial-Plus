@@ -267,6 +267,12 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .fit__no h3 { color: var(--ink); }
 .fit__no li::before { background: var(--sand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 7l10 10M17 7L7 17' fill='none' stroke='%234F5873' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 15px no-repeat; }
 
+/* Puerta lateral: Networking Junior */
+.junior { margin-top: 16px; background: var(--ink); color: #fff; border-radius: var(--r-xl); padding: clamp(36px, 4.5vw, 52px) clamp(24px, 5vw, 64px); display: grid; gap: 16px; justify-items: center; }
+.junior h3 { font-size: clamp(24px, 2.6vw, 32px); max-width: 640px; }
+.junior p { color: rgba(255,255,255,.75); max-width: 640px; }
+.junior .btn { margin-top: 8px; }
+
 /* ---------- Enroll ---------- */
 .enroll { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; }
 .price { background: var(--ink); color: #fff; border-radius: var(--r-xl); padding: clamp(40px, 5vw, 56px) clamp(24px, 4vw, 56px); display: grid; gap: 14px; justify-items: center; align-content: center; }
