@@ -144,6 +144,37 @@ if (carousel) {
   restart();
 }
 
+// ---------- Volver arriba ----------
+const toTop = document.getElementById('to-top');
+if (toTop) {
+  const onScroll = () => toTop.classList.toggle('is-shown', window.scrollY > window.innerHeight * 0.9);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+// ---------- Globo de WhatsApp ----------
+// Aparece a los 5 segundos, se va solo a los 10 y vuelve cada 40, hasta 3 veces. Si la persona lo cierra, no vuelve.
+const bubble = document.getElementById('wa-bubble');
+if (bubble) {
+  let times = 0;
+  let closed = false;
+  const show = () => {
+    if (closed || times >= 3) return;
+    times += 1;
+    bubble.hidden = false;
+    requestAnimationFrame(() => bubble.classList.add('is-shown'));
+    setTimeout(hide, 10000);
+  };
+  const hide = () => {
+    bubble.classList.remove('is-shown');
+    setTimeout(() => { bubble.hidden = true; }, 450);
+    if (!closed && times < 3) setTimeout(show, 40000);
+  };
+  bubble.querySelector('.wa__close').addEventListener('click', () => { closed = true; hide(); });
+  setTimeout(show, 5000);
+}
+
 // ---------- Barra fija en celular ----------
 const sticky = document.getElementById('sticky');
 const hero = document.querySelector('.hero');

@@ -1,0 +1,36 @@
+# NP+ · Se permite el rastreo completo, incluidos los buscadores con IA.
+User-agent: *
+Allow: /
+
+# Buscadores y asistentes con IA (permitidos explícitamente)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://TU-DOMINIO.com/sitemap.xml

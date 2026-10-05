@@ -1,0 +1,14 @@
+{
+  "name": "NP+ · Formar + Sostener",
+  "short_name": "NP+",
+  "description": "Certificación en Liderazgo Ontológico Organizacional, 100% virtual, con mentorías, networking y práctica en empresas.",
+  "lang": "es-AR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FAFAF8",
+  "theme_color": "#0C1631",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
