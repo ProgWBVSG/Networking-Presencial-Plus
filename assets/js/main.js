@@ -144,6 +144,28 @@ if (carousel) {
   restart();
 }
 
+// ---------- Barra que acompaña el scroll ----------
+const nav = document.querySelector('.nav');
+if (nav) {
+  const onScrollNav = () => nav.classList.toggle('is-fixed', window.scrollY > 140);
+  window.addEventListener('scroll', onScrollNav, { passive: true });
+  onScrollNav();
+
+  // Marca la sección en la que estás
+  const links = [...nav.querySelectorAll('.nav__menu a[href^="#"]')];
+  const byId = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        links.forEach((a) => a.classList.remove('is-active'));
+        byId.get(e.target.id)?.classList.add('is-active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    byId.forEach((_, id) => { const sec = document.getElementById(id); if (sec) spy.observe(sec); });
+  }
+}
+
 // ---------- Volver arriba ----------
 const toTop = document.getElementById('to-top');
 if (toTop) {
