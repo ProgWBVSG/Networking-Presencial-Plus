@@ -87,7 +87,6 @@ if (carousel) {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let current = 1;
   let timer = null;
-  let paused = false;
 
   const dots = slides.map((_, i) => {
     const b = document.createElement('button');
@@ -118,22 +117,16 @@ if (carousel) {
 
   function restart() {
     clearTimeout(timer);
-    if (reduceMotion || paused || document.hidden) return;
+    if (reduceMotion || document.hidden) return;
     timer = setTimeout(() => goTo(current + 1), INTERVAL);
   }
 
-  carousel.querySelectorAll('.carousel__btn').forEach((b) => b.addEventListener('click', () => goTo(current + Number(b.dataset.dir))));
   let swiped = false;
   slides.forEach((s, i) => s.addEventListener('click', () => {
     if (swiped) { swiped = false; return; }
     if (i !== current) goTo(i);
   }));
 
-  const pause = (v) => { paused = v; restart(); };
-  carousel.addEventListener('mouseenter', () => pause(true));
-  carousel.addEventListener('mouseleave', () => pause(false));
-  carousel.addEventListener('focusin', () => pause(true));
-  carousel.addEventListener('focusout', () => pause(false));
   document.addEventListener('visibilitychange', restart);
 
   // Deslizar con el dedo
