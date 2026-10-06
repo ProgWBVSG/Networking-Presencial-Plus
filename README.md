@@ -13,8 +13,8 @@ Abrir http://localhost:5173
 ## Antes de publicar
 
 1. **WhatsApp:** cargado en `assets/js/main.js` (`NP_CONFIG.whatsapp = 5493484359294`, es el +54 9 3484 35-9294 de la coordinación). Para cambiarlo, usar código de país y sin `+` ni espacios.
-2. **Textos entre corchetes:** precio, cuotas, duración, horario, requisitos, nombres de la dirección, trayectoria y testimonio.
-3. **Temario:** las 4 etapas son una propuesta. Validar con la dirección.
+2. **Botón "Ingresar":** hoy abre WhatsApp con la coordinación. Cuando haya un link de acceso para los miembros, cargarlo en `assets/js/main.js` (`NP_CONFIG.ingresarUrl`).
+3. **Textos entre corchetes:** mail institucional del pie y trayectoria. Las preguntas frecuentes sin respuesta confirmada están comentadas en `index.html`.
 4. **Fotos:** las de `assets/img` son provisorias de Unsplash. Reemplazar por fotos reales de los networking y la dirección con el mismo nombre de archivo (versión de 1600 y de 800 px de ancho, en WebP).
 5. **Marca:** cuando lleguen logos y colores oficiales, cambiar las variables de `:root` en `assets/css/styles.css` y el logo (hoy es texto `NP+`).
 6. **Medición:** pegar el píxel de Meta en el `<head>`. Los clics a WhatsApp ya disparan `fbq('track', 'Lead')` y un evento `whatsapp_click` en `dataLayer` si existen.

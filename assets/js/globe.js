@@ -1,39 +1,50 @@
-/* NP+ · Globo de Argentina (basado en el componente GlobePulse de cobe, sin React) */
+/* NP+ · Globo del mundo con el sello NP+ (basado en el componente GlobePulse de cobe, sin React) */
 import createGlobe from './vendor/cobe.esm.js';
 
 const section = document.querySelector('.country');
 const canvas = document.getElementById('globe');
 
 if (section && canvas) {
+  const wrap = canvas.closest('.globe');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Ciudades: Buenos Aires es el origen de la red; el resto muestra que la academia virtual llega a todo el país.
+  // Ciudades con el sello NP+. Buenos Aires es el origen de los arcos.
   const cities = [
-    { id: 'baires', location: [-34.6, -58.38], size: 0.045 },
-    { id: 'cordoba', location: [-31.42, -64.18], size: 0.04 },
-    { id: 'rosario', location: [-32.95, -60.65] },
-    { id: 'mendoza', location: [-32.89, -68.84] },
-    { id: 'tucuman', location: [-26.82, -65.22] },
-    { id: 'salta', location: [-24.78, -65.41] },
-    { id: 'resistencia', location: [-27.46, -58.98] },
-    { id: 'neuquen', location: [-38.95, -68.06] },
-    { id: 'mardelplata', location: [-38.0, -57.56] },
-    { id: 'bariloche', location: [-41.13, -71.31] },
-    { id: 'comodoro', location: [-45.86, -67.48] },
-    { id: 'ushuaia', location: [-54.8, -68.3] },
+    { id: 'baires', location: [-34.6, -58.38], size: 0.04 },
+    { id: 'saopaulo', location: [-23.55, -46.63] },
+    { id: 'lima', location: [-12.05, -77.04] },
+    { id: 'bogota', location: [4.71, -74.07] },
+    { id: 'mexico', location: [19.43, -99.13] },
+    { id: 'miami', location: [25.76, -80.19] },
+    { id: 'losangeles', location: [34.05, -118.24] },
+    { id: 'madrid', location: [40.42, -3.7] },
+    { id: 'panama', location: [8.98, -79.52] },
   ];
   const origin = cities[0].location;
 
-  // Ángulos para centrar Argentina en el globo
-  const toAngles = ([lat, lng]) => [Math.PI - ((lng * Math.PI) / 180 - Math.PI / 2), (lat * Math.PI) / 180];
-  const [basePhi, baseTheta] = toAngles([-40, -64]);
+  // Arranca mirando América del Sur y gira sola
+  const toPhi = (lng) => Math.PI - ((lng * Math.PI) / 180 - Math.PI / 2);
+  const baseTheta = 0.28;
+  let phi = toPhi(-62);
 
   let globe = null;
   let rafId = 0;
   let running = false;
-  let t = 0;
-  let drag = null;               // { x, y } al empezar a arrastrar
+  let drag = null;
   const offset = { phi: 0, theta: 0 };
+
+  function addPins() {
+    cities.forEach((c, i) => {
+      const pin = document.createElement('span');
+      pin.className = 'globe__pin';
+      pin.setAttribute('aria-hidden', 'true');
+      pin.style.setProperty('position-anchor', `--cobe-${c.id}`);
+      pin.style.setProperty('--d', `${(i * 0.37).toFixed(2)}s`);
+      pin.style.opacity = `var(--cobe-visible-${c.id}, 0)`;
+      pin.innerHTML = '<i></i><i></i><b>NP<em>+</em></b>';
+      wrap.appendChild(pin);
+    });
+  }
 
   function init() {
     const width = canvas.offsetWidth;
@@ -42,13 +53,12 @@ if (section && canvas) {
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
       width,
       height: width,
-      phi: basePhi,
+      phi,
       theta: baseTheta,
       dark: 1,
-      scale: 1.35,
       diffuse: 1.4,
-      mapSamples: 20000,
-      mapBrightness: 7,
+      mapSamples: 16000,
+      mapBrightness: 8,
       baseColor: [0.32, 0.42, 0.7],
       markerColor: [0.56, 0.7, 1],
       glowColor: [0.08, 0.14, 0.32],
@@ -57,23 +67,18 @@ if (section && canvas) {
       arcs: cities.slice(1).map((c) => ({ from: origin, to: c.location, id: `ba-${c.id}` })),
       arcColor: [0.56, 0.7, 1],
       arcWidth: 0.45,
-      arcHeight: 0.18,
+      arcHeight: 0.22,
       opacity: 0.85,
     });
+    addPins();
     canvas.style.opacity = '1';
-    if (reduceMotion) globe.update({ phi: basePhi, theta: baseTheta });
+    if (reduceMotion) globe.update({ phi, theta: baseTheta });
   }
 
   function frame() {
     if (!running) return;
-    if (!drag) {
-      t += 0.006;
-      // Vuelve suave a Argentina después de arrastrar
-      offset.phi *= 0.94;
-      offset.theta *= 0.94;
-    }
-    const sway = reduceMotion ? 0 : Math.sin(t) * 0.1; // vaivén leve, siempre sobre Argentina
-    globe.update({ phi: basePhi + sway + offset.phi, theta: baseTheta + offset.theta });
+    if (!drag && !reduceMotion) phi += 0.0035;
+    globe.update({ phi: phi + offset.phi, theta: baseTheta + offset.theta });
     rafId = requestAnimationFrame(frame);
   }
 
@@ -88,12 +93,19 @@ if (section && canvas) {
   // Solo se dibuja cuando la sección está a la vista
   new IntersectionObserver(([entry]) => (entry.isIntersecting ? start() : stop()), { rootMargin: '200px' }).observe(section);
 
-  // Arrastrar para mirar alrededor
-  canvas.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY, phi: offset.phi, theta: offset.theta }; canvas.style.cursor = 'grabbing'; });
+  // Arrastrar para girarlo
+  canvas.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY }; canvas.style.cursor = 'grabbing'; });
   window.addEventListener('pointermove', (e) => {
     if (!drag) return;
-    offset.phi = drag.phi + (e.clientX - drag.x) / 260;
-    offset.theta = Math.max(-0.6, Math.min(0.6, drag.theta + (e.clientY - drag.y) / 600));
+    offset.phi = (e.clientX - drag.x) / 260;
+    offset.theta = Math.max(-0.6, Math.min(0.6, (e.clientY - drag.y) / 600));
   }, { passive: true });
-  window.addEventListener('pointerup', () => { drag = null; canvas.style.cursor = 'grab'; }, { passive: true });
+  window.addEventListener('pointerup', () => {
+    if (!drag) return;
+    phi += offset.phi;
+    offset.phi = 0;
+    offset.theta *= 0.5;
+    drag = null;
+    canvas.style.cursor = 'grab';
+  }, { passive: true });
 }

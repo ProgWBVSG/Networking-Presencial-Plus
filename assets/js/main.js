@@ -3,6 +3,8 @@
 // Datos a completar por NP+. El número va con código de país, sin + ni espacios (ej: 5491112345678).
 const NP_CONFIG = {
   whatsapp: '5493484359294',
+  // Link del botón "Ingresar" (el acceso de los miembros). Mientras esté vacío, el botón abre WhatsApp con la coordinación.
+  ingresarUrl: '',
 };
 
 document.documentElement.classList.add('js');
@@ -20,6 +22,15 @@ function trackLead(source) {
   if (Array.isArray(window.dataLayer)) window.dataLayer.push({ event: 'whatsapp_click', source });
 }
 
+// Botón "Ingresar": va al acceso de miembros si está cargado; si no, a WhatsApp
+document.querySelectorAll('[data-login]').forEach((el) => {
+  if (!NP_CONFIG.ingresarUrl) return;
+  el.href = NP_CONFIG.ingresarUrl;
+  el.target = '_blank';
+  el.rel = 'noopener';
+  el.removeAttribute('data-wa');
+});
+
 document.querySelectorAll('[data-wa]').forEach((el) => {
   el.href = waLink(el.dataset.wa);
   el.target = '_blank';
@@ -36,7 +47,7 @@ function buildMessage() {
   const cuando = form.querySelector('input[name="cuando"]:checked').value;
   const quiero = cuando.startsWith('por ahora') ? cuando : `me gustaría ${cuando}`;
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-  return `Hola. ${cap(motivo)}. ${cap(quiero)}. ¿Me pasan el programa completo?`;
+  return `Hola. ${cap(motivo)}. ${cap(quiero)}. ¿Me pasan la información?`;
 }
 
 if (form) {
