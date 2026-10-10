@@ -41,7 +41,7 @@ if (section && canvas) {
       pin.style.setProperty('position-anchor', `--cobe-${c.id}`);
       pin.style.setProperty('--d', `${(i * 0.37).toFixed(2)}s`);
       pin.style.opacity = `var(--cobe-visible-${c.id}, 0)`;
-      pin.innerHTML = '<i></i><i></i><b>NP<em>+</em></b>';
+      pin.innerHTML = '<i></i><i></i><b></b>';
       wrap.appendChild(pin);
     });
   }
@@ -59,13 +59,13 @@ if (section && canvas) {
       diffuse: 1.4,
       mapSamples: 16000,
       mapBrightness: 8,
-      baseColor: [0.32, 0.42, 0.7],
-      markerColor: [0.56, 0.7, 1],
-      glowColor: [0.08, 0.14, 0.32],
+      baseColor: [0.39, 0.65, 0.67],
+      markerColor: [0.98, 0.81, 0.18],
+      glowColor: [0.2, 0.23, 0.34],
       markerElevation: 0.01,
       markers: cities.map((c) => ({ location: c.location, size: c.size || 0.025, id: c.id })),
       arcs: cities.slice(1).map((c) => ({ from: origin, to: c.location, id: `ba-${c.id}` })),
-      arcColor: [0.56, 0.7, 1],
+      arcColor: [0.98, 0.81, 0.18],
       arcWidth: 0.45,
       arcHeight: 0.22,
       opacity: 0.85,

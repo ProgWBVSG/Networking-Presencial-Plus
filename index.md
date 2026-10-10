@@ -49,10 +49,10 @@ NP+ es una red de grupos que se encuentran, se recomiendan y trabajan juntos: la
 
 Los fundadores:
 
-- **Roberto Corvalán**, socio fundador. Coach Profesional Acreditado (CPA) por la CIC. Acompaña a organizaciones y personas a desplegar su potencial y su liderazgo. Con sesiones, talleres y conferencias fortalece competencias, mejora la productividad y el bienestar, y consolida equipos de alto rendimiento.
+- **Roberto Corvalán**, socio fundador. Coach Profesional Acreditado (CPA) por la CIC. Coach Profesional formado bajo estándares de la International Coaching Federation (ICF), programa ACTP (Accredited Coach Training Program). Expert Mentor con estándares RGM, Red Global de Mentores. Consultor de Empresas y Empresario. Acompaña a organizaciones y personas a desplegar su potencial y su liderazgo. Con sesiones, talleres y conferencias fortalece competencias, mejora la productividad y el bienestar, y consolida equipos de alto rendimiento.
 - **Mayco Roy Farías**, socio fundador. Coach Ontológico y PNL. Acreditado por la CIC. Transforma equipos operativos que dependen del control constante en sistemas de trabajo claros, con roles y conversaciones que funcionan.
 
-Avalados por la CFF.
+Avalados por la ICF.
 
 ## Reservá tu lugar
 
