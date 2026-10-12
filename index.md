@@ -58,6 +58,8 @@ Avalados por la ICF.
 
 Escribinos y te contamos todo. Te responde una persona del equipo, no un bot. La inversión y las formas de pago de la academia se informan por mensaje directo de WhatsApp, junto con el programa completo.
 
+Contacto por correo: contacto@gruponp.com.ar.
+
 ## Preguntas frecuentes
 
 **¿Qué es NP+?** Un ecosistema de coaches con cinco espacios: la Academia, el Networking de profesionales, el Networking Junior para estudiantes, las Empresas donde practicar y las Mesas de desarrollo en otras provincias. Podés empezar por el que quieras.
