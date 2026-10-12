@@ -224,3 +224,24 @@ if (sticky && hero && 'IntersectionObserver' in window) {
   new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; update(); }).observe(hero);
   if (enroll) new IntersectionObserver(([e]) => { enrollVisible = e.isIntersecting; update(); }).observe(enroll);
 }
+
+// Reseñas de los fundadores: abrir y cerrar
+document.querySelectorAll('.more-btn').forEach((btn) => {
+  const box = document.getElementById(btn.getAttribute('aria-controls'));
+  if (!box) return;
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    btn.firstElementChild.textContent = open ? 'Cerrar reseña' : 'Ver reseña';
+    box.classList.toggle('is-open', open);
+  });
+});
+
+// Video sin sonido: solo se reproduce mientras se ve
+const vids = document.querySelectorAll('video[autoplay]');
+if (vids.length && 'IntersectionObserver' in window) {
+  const vio = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) e.target.play().catch(() => {}); else e.target.pause(); });
+  }, { threshold: 0.25 });
+  vids.forEach((v) => vio.observe(v));
+}

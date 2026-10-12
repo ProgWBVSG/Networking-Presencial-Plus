@@ -1,12 +1,12 @@
-# Formate como coach con una comunidad que te sostiene
+# Un ecosistema de coaches que se forman, practican y se sostienen entre sí
 
-NP+ es un ecosistema de coaches. Formate en la academia, conectá con otros coaches y practicá en empresas. Desde el día que empezás ya sos parte del networking. Lema: Formar + Sostener.
+Academia, networking, empresas y mesas de desarrollo en un mismo lugar. Empezá por el espacio que necesitás. Lema: Formar + Sostener.
 
-## Formar, practicar, conectar y crecer, en un mismo lugar
+## Dos pilares y todo lo que se desprende de ellos
 
-La academia te abre a todo el ecosistema del coach. Si ya sos coach, empezá por el espacio que prefieras. NP+ tiene cinco espacios:
+La Academia forma y las Empresas dan práctica real. De ahí nacen los demás espacios, para que nunca estés solo en el camino. NP+ tiene cinco espacios:
 
-- **Academia:** formate como coach con la Certificación en Liderazgo Ontológico Organizacional. 100% virtual. Arranca el 15 de marzo.
+- **Academia:** formate como coach con la Certificación en Liderazgo Ontológico Organizacional. 100% virtual. Próximo inicio de clases: 15 de marzo de 2027.
 - **Networking Junior:** el espacio para estudiantes. Aprendé, preguntá y practicá con otros estudiantes. No importa dónde estudies.
 - **Networking de profesionales:** encuentros entre coaches de distintas profesiones. Compartí experiencia y hacé crecer tu red.
 - **Empresas:** practicá dentro de una empresa como observador. El punto más alto del recorrido: ejercer como coach adentro de una organización.
@@ -49,8 +49,8 @@ NP+ es una red de grupos que se encuentran, se recomiendan y trabajan juntos: la
 
 Los fundadores:
 
-- **Roberto Corvalán**, socio fundador. Coach Profesional Acreditado (CPA) por la CIC. Coach Profesional formado bajo estándares de la International Coaching Federation (ICF), programa ACTP (Accredited Coach Training Program). Expert Mentor con estándares RGM, Red Global de Mentores. Consultor de Empresas y Empresario. Acompaña a organizaciones y personas a desplegar su potencial y su liderazgo. Con sesiones, talleres y conferencias fortalece competencias, mejora la productividad y el bienestar, y consolida equipos de alto rendimiento.
-- **Mayco Roy Farías**, socio fundador. Coach Ontológico y PNL. Acreditado por la CIC. Transforma equipos operativos que dependen del control constante en sistemas de trabajo claros, con roles y conversaciones que funcionan.
+- **Roberto Corvalán**, socio fundador. Coach Ejecutivo y Organizacional y Consultor de Empresas. Coach Profesional Acreditado (CPA) por la CIC. Con más de 20 años acompañando a ejecutivos y líderes, se especializa en liderazgo, comunicación, ventas y experiencia del cliente. Integra coaching, mentoría, formación y consultoría para fortalecer equipos, alinear objetivos y transformar el talento individual en resultados compartidos. Es cofundador de Grupo NP+, Grupo PARH Broker de Seguros, EmprendePyme, ADN Inmobiliario y SETUP, consultora de coaching y estrategia empresarial para LATAM. Creó el programa Asesor Profesional en Ventas y Experiencia del Cliente. Es Embajador para Argentina en la Red Global de Mentores (RGM) y Director de Relacionamiento en la Confederación Interamericana de Coaching (CIC). Formado bajo estándares de la International Coaching Federation (ICF), programa ACTP (Accredited Coach Training Program). Expert Mentor con estándares RGM.
+- **Mayco Roy Farías Lera**, socio fundador. Coach Ontológico Profesional y PNL, Líder Industrial. Acreditado por la CIC. Más de una década de experiencia en gestión operativa, liderazgo industrial y desarrollo de equipos. Lidera operaciones de Almacén y Expedición en una industria frigorífica de exportación, acompañando a supervisores y equipos en comunicación, gestión de personas y toma de decisiones en entornos de alta exigencia. Es creador de la certificación De Operador a Líder que Diseña y cofundador de la Academia de Coaching y Liderazgo Organizacional.
 
 Avalados por la ICF.
 
