@@ -1,0 +1,6 @@
+# NP+ · Archivos internos que no deben verse desde internet
+# (la carpeta .git queda en el hosting cuando se actualiza con git pull)
+<IfModule mod_alias.c>
+  RedirectMatch 404 /\.git
+  RedirectMatch 404 ^/(README\.md|\.gitignore|\.htaccess)$
+</IfModule>
