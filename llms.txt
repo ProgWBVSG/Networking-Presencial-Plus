@@ -2,7 +2,7 @@
 
 > NP+ es un ecosistema de coaching con el lema "Formar + Sostener". Reúne cinco espacios: una academia que dicta la Certificación en Liderazgo Ontológico Organizacional (100% virtual), un networking de profesionales, un Networking Junior para estudiantes, relacionamiento con empresas donde practicar y mesas de desarrollo para replicar el modelo en otras provincias. Desde el primer día el estudiante es parte de la red.
 
-Última actualización: 6 de octubre de 2026.
+Última actualización: 12 de octubre de 2026.
 
 ## Misión y visión
 
@@ -31,9 +31,9 @@
 
 ## Páginas
 
-- [Inicio](https://TU-DOMINIO.com/): landing con los cinco espacios y la reserva por WhatsApp.
-- [Versión en texto](https://TU-DOMINIO.com/index.md): todo el contenido de la landing en Markdown.
+- [Inicio](https://gruponp.com.ar/): landing con los cinco espacios y la reserva por WhatsApp.
+- [Versión en texto](https://gruponp.com.ar/index.md): todo el contenido de la landing en Markdown.
 
 ## Optional
 
-- [Instagram de NP+](https://TU-DOMINIO.com/): reemplazar por el perfil oficial.
+- [Instagram de NP+](https://gruponp.com.ar/): reemplazar por el perfil oficial.
