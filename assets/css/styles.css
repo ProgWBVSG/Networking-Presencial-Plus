@@ -597,3 +597,18 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .startbar__pill strong { display: block; font: 600 clamp(17px, 1.8vw, 20px)/1.2 var(--f-head); letter-spacing: -.02em; }
 .startbar__pill span:not(.float__icon) { font-size: 15px; color: var(--muted); }
 @media (max-width: 640px) { .startbar__pill { width: 100%; max-width: 420px; } }
+
+/* Certificado real y sellos de aval */
+.cert__doc { margin: 0; border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow); background: #fffef3; transition: transform .4s ease; }
+.cert__doc img { display: block; width: 100%; height: auto; }
+.cert__doc:hover { transform: rotate(-1deg) scale(1.015); }
+.seals { display: flex; justify-content: center; align-items: flex-start; gap: clamp(28px, 6vw, 72px); margin-top: 16px; }
+.seals li { display: grid; justify-items: center; gap: 14px; max-width: 190px; text-align: center; }
+.seals img { width: clamp(96px, 12vw, 130px); height: auto; aspect-ratio: 1; border-radius: 50%; box-shadow: 0 14px 30px -14px rgba(22,26,44,.5); }
+.seals span { font: 600 15px/1.3 var(--f-head); letter-spacing: -.01em; }
+@media (prefers-reduced-motion: reduce) { .cert__doc { transition: none; } .cert__doc:hover { transform: none; } }
+
+/* Cierre: el texto abajo para que se vean las caras */
+.closing__frame { place-items: end center; padding-top: 220px; }
+.closing__frame > img { object-position: 50% 30%; }
+@media (max-width: 640px) { .closing__frame { padding-top: 160px; } }
