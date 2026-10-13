@@ -612,3 +612,14 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .closing__frame { place-items: end center; padding-top: 220px; }
 .closing__frame > img { object-position: 50% 30%; }
 @media (max-width: 640px) { .closing__frame { padding-top: 160px; } }
+
+/* Qué vas a poder hacer al certificarte */
+.cert { grid-template-columns: 1fr; justify-items: center; gap: clamp(40px, 5vw, 64px); }
+.cert__doc { width: min(100%, 760px); }
+.cert__outcomes { width: 100%; gap: 28px; }
+.outcomes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.outcomes .outcome { max-width: none; height: 100%; align-content: start; padding: 28px 24px 30px; border-radius: 24px; background: var(--sand); text-align: center; }
+.outcomes .outcome h4 { font-size: 19px; line-height: 1.2; }
+.outcomes .outcome p { font-size: 16px; line-height: 1.5; }
+@media (max-width: 900px) { .outcomes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .outcomes { grid-template-columns: 1fr; } }

@@ -27,11 +27,14 @@ En NP+ el sostén no espera al título. Arranca el primer día.
 
 No es solo una certificación. Aprendés a acompañar a líderes y equipos, con toda la red sosteniéndote desde el primer día.
 
-Al terminar vas a poder:
+Al terminar la certificación vas a poder:
 
-- **Acompañar a líderes y equipos:** sesiones de coaching individuales y grupales dentro de una organización.
-- **Destrabar conversaciones difíciles:** ver qué hay detrás de un conflicto y cambiar la conversación.
-- **Trabajar en red:** hacer crecer tu contacto profesional.
+- **Conducir una sesión de coaching de principio a fin:** abrir la conversación, indagar, detectar el quiebre, diseñar acciones y cerrar con compromisos concretos.
+- **Leer cómo conversa un equipo:** observar patrones, cultura y dinámicas de una organización y convertirlos en un diagnóstico.
+- **Sostener las conversaciones que otros evitan:** dar y pedir feedback, trabajar reclamos, resistencias y negociaciones.
+- **Acompañar un proceso de cambio:** entender dónde se traba un equipo y diseñar acciones para destrabarlo.
+- **Intervenir en una organización real:** hacés el relevamiento, diseñás la propuesta, la implementás y entregás un informe final con resultados.
+- **Saber dónde termina tu rol:** confidencialidad, límites del coaching y cuándo derivar, para ejercer con criterio profesional.
 
 ## ¿Es para vos?
 
