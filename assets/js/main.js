@@ -163,7 +163,7 @@ if (nav) {
   onScrollNav();
 
   // Marca la sección en la que estás
-  const links = [...nav.querySelectorAll('.nav__menu a[href^="#"]')];
+  const links = [...nav.querySelectorAll('.nav__menu > li > a[href^="#"]')];
   const byId = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
   if ('IntersectionObserver' in window) {
     const spy = new IntersectionObserver((entries) => {
@@ -244,4 +244,19 @@ if (vids.length && 'IntersectionObserver' in window) {
     entries.forEach((e) => { if (e.isIntersecting) e.target.play().catch(() => {}); else e.target.pause(); });
   }, { threshold: 0.25 });
   vids.forEach((v) => vio.observe(v));
+}
+
+// Menú "Grupos": en pantallas táctiles el primer toque abre la lista
+const sub = document.querySelector('.nav__menu .has-sub');
+if (sub) {
+  const parent = sub.querySelector(':scope > a');
+  const setOpen = (v) => { sub.classList.toggle('is-open', v); parent.setAttribute('aria-expanded', String(v)); };
+  parent.addEventListener('click', (e) => {
+    if (window.matchMedia('(hover: none) and (min-width: 861px)').matches && !sub.classList.contains('is-open')) { e.preventDefault(); setOpen(true); }
+  });
+  document.addEventListener('click', (e) => { if (!sub.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  sub.addEventListener('focusin', () => setOpen(true));
+  sub.addEventListener('mouseenter', () => setOpen(true));
+  sub.addEventListener('mouseleave', () => setOpen(false));
 }

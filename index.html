@@ -243,7 +243,16 @@
       <a class="nav__brand" href="#inicio" aria-label="Grupo NP+, Formar + Sostener, inicio"><img src="assets/img/logo-np-nav.webp" alt="Grupo NP+" width="52" height="39"><span>Formar + Sostener</span></a>
       <ul class="nav__menu" id="menu">
         <li><a href="#ecosistema">Ecosistema</a></li>
-        <li><a href="#academia">Academia</a></li>
+        <li class="has-sub">
+          <a href="#ecosistema" aria-haspopup="true" aria-expanded="false">Grupos</a>
+          <ul class="subnav">
+            <li><a href="#grupo-academia">Academia</a></li>
+            <li><a href="#grupo-junior">Networking Junior</a></li>
+            <li><a href="#grupo-networking">Networking Profesional</a></li>
+            <li><a href="#grupo-empresas">Empresas</a></li>
+            <li><a href="#grupo-mesas">Mesas de Desarrollo</a></li>
+          </ul>
+        </li>
         <li><a href="#nosotros">Estos somos</a></li>
         <li><a href="#inscripcion">Reservar</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
@@ -285,7 +294,7 @@
     </div>
 
     <div class="spaces">
-      <article class="space reveal" style="--c: var(--c-academia); --g: var(--g-academia)">
+      <article class="space reveal" id="grupo-academia" style="--c: var(--c-academia); --g: var(--g-academia)">
         <img class="space__photo" src="assets/img/foto-academia-800.webp?v=2" srcset="assets/img/foto-academia-800.webp?v=2 800w, assets/img/foto-academia-1600.webp?v=2 1600w" sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw" alt="Cuatro integrantes de NP+ sonriendo juntos" loading="lazy" width="800" height="533">
         <div class="space__head">
           <img class="space__logo" src="assets/img/logo-academia.webp" alt="Logo NP+ Academia de formación" width="72" height="72">
@@ -303,7 +312,7 @@
         </div>
         <a class="btn btn--ink" href="#" data-wa="Hola, quiero certificarme en Liderazgo Ontológico Organizacional. ¿Me pasan información de la Academia?">Quiero certificarme</a>
       </article>
-      <article class="space reveal" style="--c: var(--c-junior); --g: var(--g-junior)">
+      <article class="space reveal" id="grupo-junior" style="--c: var(--c-junior); --g: var(--g-junior)">
         <img class="space__photo" src="assets/img/foto-junior-800.webp?v=2" srcset="assets/img/foto-junior-800.webp?v=2 800w, assets/img/foto-junior-1600.webp?v=2 1600w" sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw" alt="Estudiantes y coaches en un encuentro de NP+" loading="lazy" width="800" height="533">
         <div class="space__head">
           <img class="space__logo" src="assets/img/logo-junior.webp" alt="Logo NP+ Junior" width="72" height="72">
@@ -322,7 +331,7 @@
         </div>
         <a class="btn btn--ink" href="#" data-wa="Hola, soy estudiante y quiero sumarme al Networking Junior de NP+. ¿Cómo es la membresía?">Sumarme al Junior</a>
       </article>
-      <article class="space reveal" style="--c: var(--c-networking); --g: var(--g-networking)">
+      <article class="space reveal" id="grupo-networking" style="--c: var(--c-networking); --g: var(--g-networking)">
         <img class="space__photo" src="assets/img/foto-networking-800.webp?v=2" srcset="assets/img/foto-networking-800.webp?v=2 800w, assets/img/foto-networking-1600.webp?v=2 1600w" sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw" alt="Dos integrantes de NP+ riendo en un encuentro" loading="lazy" width="800" height="533">
         <div class="space__head">
           <img class="space__logo" src="assets/img/logo-networking.webp" alt="Logo NP+ Networking profesional" width="72" height="72">
@@ -336,7 +345,7 @@
         </div>
         <a class="btn btn--ink" href="#" data-wa="Hola, soy coach y quiero formar parte del networking de profesionales de NP+. ¿Cómo me sumo?">Sumarme al networking</a>
       </article>
-      <article class="space reveal" style="--c: var(--c-empresas); --g: var(--g-empresas)">
+      <article class="space reveal" id="grupo-empresas" style="--c: var(--c-empresas); --g: var(--g-empresas)">
         <img class="space__photo" src="assets/img/foto-empresas-800.webp?v=2" srcset="assets/img/foto-empresas-800.webp?v=2 800w, assets/img/foto-empresas-1600.webp?v=2 1600w" sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw" style="object-position:50% 55%" alt="Integrantes de NP+ conversando alrededor de una mesa" loading="lazy" width="800" height="533">
         <div class="space__head">
           <img class="space__logo" src="assets/img/logo-empresas.webp" alt="Logo NP+ Relacionamiento con empresas" width="72" height="72">
@@ -358,7 +367,7 @@
         </div>
         <a class="btn btn--ink" href="#" data-wa="Hola, quiero practicar dentro de una empresa con NP+. ¿Cómo funciona?">Ver cómo trabajamos con empresas</a>
       </article>
-      <article class="space reveal" style="--c: var(--c-mesas); --g: var(--g-mesas)">
+      <article class="space reveal" id="grupo-mesas" style="--c: var(--c-mesas); --g: var(--g-mesas)">
         <img class="space__photo" src="assets/img/foto-mesas-800.webp?v=2" srcset="assets/img/foto-mesas-800.webp?v=2 800w, assets/img/foto-mesas-1600.webp?v=2 1600w" sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw" style="object-position:50% 40%" alt="Una integrante de NP+ presentando frente a un grupo" loading="lazy" width="800" height="533">
         <div class="space__head">
           <img class="space__logo" src="assets/img/logo-mesas.webp" alt="Logo NP+ Mesas de desarrollo" width="72" height="72">
