@@ -2,9 +2,9 @@
 
 Academia, networking, empresas y mesas de desarrollo en un mismo lugar. Empezá por el espacio que necesitás. Lema: Formar + Sostener.
 
-## Dos pilares y todo lo que se desprende de ellos
+## Un lugar para cada momento
 
-La Academia forma y las Empresas dan práctica real. De ahí nacen los demás espacios, para que nunca estés solo en el camino. NP+ tiene cinco espacios:
+Los 5 espacios de NP+. Empezá por el que necesitás: todos se conectan entre sí.
 
 - **Academia:** formate como coach con la Certificación en Liderazgo Ontológico Organizacional. 100% virtual. Próximo inicio de clases: 15 de marzo de 2027.
 - **Networking Junior:** el espacio para estudiantes. Aprendé, preguntá y practicá con otros estudiantes. No importa dónde estudies.
