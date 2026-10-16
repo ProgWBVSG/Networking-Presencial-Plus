@@ -634,3 +634,21 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 @media (max-width: 1100px) { .spaces { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 760px) { .spaces { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .spaces { grid-template-columns: 1fr; } .space .btn { width: calc(100% - 20px); } .space__photo { height: auto; aspect-ratio: 16 / 10; } }
+
+/* Los 5 espacios: 3 arriba y 2 abajo, con degradé de color */
+:root { --g-academia: #FFEFB0; --g-junior: #CFEAEC; --g-networking: #D3E1F0; --g-empresas: #D4D7E8; --g-mesas: #C6F0EC; }
+.spaces { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.space { flex: 0 0 calc((100% - 40px) / 3); min-width: 0; padding: 12px 12px 26px; background: linear-gradient(170deg, var(--g) 0%, #fff 68%); border: 1px solid rgba(51,57,81,.07); }
+.space__photo { height: 230px; }
+.space__head h3 { font-size: 21px; }
+.space__logo { width: 72px; height: 72px; }
+.space__head { padding: 20px 12px 4px; }
+.space__body { flex: 1; margin: 14px 12px 0; padding-left: 16px; border-left: 4px solid var(--c); text-align: left; display: grid; gap: 12px; align-content: start; }
+.space__body p, .space > p { margin: 0; padding: 0; border: 0; font-size: 16px; line-height: 1.5; color: var(--ink); }
+.space__body h4 { margin-top: 6px; font: 700 13px/1.2 var(--f-head); letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.space__list { display: grid; gap: 10px; }
+.space__list li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; align-items: start; font-size: 15.5px; line-height: 1.45; color: var(--muted); }
+.space__list .i { width: 18px; height: 18px; margin-top: 2px; fill: none; stroke: var(--ink); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.space .btn { margin-top: 24px; }
+@media (max-width: 1000px) { .space { flex-basis: calc((100% - 20px) / 2); } }
+@media (max-width: 640px) { .space { flex-basis: 100%; } .space__photo { height: auto; aspect-ratio: 16 / 10; } }
