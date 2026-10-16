@@ -246,13 +246,13 @@ if (vids.length && 'IntersectionObserver' in window) {
   vids.forEach((v) => vio.observe(v));
 }
 
-// Menú "Grupos": en pantallas táctiles el primer toque abre la lista
+// Menú "Grupos": se abre con el mouse o con un clic
 const sub = document.querySelector('.nav__menu .has-sub');
 if (sub) {
   const parent = sub.querySelector(':scope > a');
   const setOpen = (v) => { sub.classList.toggle('is-open', v); parent.setAttribute('aria-expanded', String(v)); };
   parent.addEventListener('click', (e) => {
-    if (window.matchMedia('(hover: none) and (min-width: 861px)').matches && !sub.classList.contains('is-open')) { e.preventDefault(); setOpen(true); }
+    if (window.matchMedia('(min-width: 861px)').matches) { e.preventDefault(); setOpen(!sub.classList.contains('is-open')); }
   });
   document.addEventListener('click', (e) => { if (!sub.contains(e.target)) setOpen(false); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
