@@ -10,10 +10,12 @@ const NP_CONFIG = {
 document.documentElement.classList.add('js');
 
 // ---------- WhatsApp ----------
-function waLink(message) {
+// Cada botón puede tener su propio número con data-wa-to (si no, usa el de la coordinación)
+function waLink(message, to) {
   const text = encodeURIComponent(message);
-  return NP_CONFIG.whatsapp
-    ? `https://wa.me/${NP_CONFIG.whatsapp}?text=${text}`
+  const number = to || NP_CONFIG.whatsapp;
+  return number
+    ? `https://wa.me/${number}?text=${text}`
     : `https://wa.me/?text=${text}`;
 }
 
@@ -32,7 +34,7 @@ document.querySelectorAll('[data-login]').forEach((el) => {
 });
 
 document.querySelectorAll('[data-wa]').forEach((el) => {
-  el.href = waLink(el.dataset.wa);
+  el.href = waLink(el.dataset.wa, el.dataset.waTo);
   el.target = '_blank';
   el.rel = 'noopener';
   el.addEventListener('click', () => trackLead(el.dataset.wa));
